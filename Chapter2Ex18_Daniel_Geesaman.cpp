@@ -20,12 +20,15 @@ Requirements:
 
 #include <iostream>
 using namespace std;
-const double amountSurveyed = 16500;
+//const double amountSurveyed = 16500;
 const double amtGreaterThanOne = 0.15;
 const double preferCitrus = 0.58;
 
 int main()
 {
+    double amountSurveyed;
+    cout << "Please enter the amount of people surveyed: " << endl;
+    cin >> amountSurveyed;
     double customersOneOrMore = amountSurveyed * amtGreaterThanOne;
     double customersPrefering = amountSurveyed * preferCitrus;
     cout << "The amount of surveyed customers who buy one or more energy drinks a week: " << customersOneOrMore << endl;
